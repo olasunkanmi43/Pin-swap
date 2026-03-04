@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import Navbar from "./Navbar";
 import Hero from "./Hero";
-import BuyPIN from "./BuyPIN";
+import BuyPin from "./BuyPin";
 import AirtimeToCash from "./AirtimeToCash";
 import VTUTopup from "./VTUTopup";
 import Auth from "./Auth";
@@ -42,7 +42,7 @@ export default function App() {
           currentPage={page}
         />
         {page === "home" && <Hero navigate={navigate} user={user} />}
-        {page === "buy-pin" && <BuyPIN navigate={navigate} user={user} />}
+        {page === "buy-pin" && <BuyPin navigate={navigate} user={user} />}
         {page === "airtime-cash" && (
           <AirtimeToCash navigate={navigate} user={user} />
         )}

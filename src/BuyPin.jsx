@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./BuyPIN.css";
+import "./BuyPin.css";
 import "./shared.css";
 
 const NETWORKS = [
@@ -15,7 +15,7 @@ const NETWORKS = [
 
 const AMOUNTS = [100, 200, 500, 1000, 2000, 5000];
 
-export default function BuyPIN({ navigate }) {
+export default function BuyPin({ navigate }) {
   const [network, setNetwork] = useState(null);
   const [amount, setAmount] = useState(null);
   const [phone, setPhone] = useState("");

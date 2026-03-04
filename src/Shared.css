@@ -1,0 +1,113 @@
+/* ===== shared.css ===== */
+/* Reusable styles shared across BuyPIN, AirtimeToCash, VTUTopup, and Auth */
+
+/* Back button */
+.back-btn {
+  background: none;
+  border: none;
+  color: rgba(240, 237, 232, 0.4);
+  cursor: pointer;
+  font-size: 13px;
+  margin-bottom: 20px;
+  padding: 0;
+  font-family: 'Syne', sans-serif;
+  display: inline-block;
+  transition: color 0.2s;
+}
+
+.back-btn:hover {
+  color: rgba(240, 237, 232, 0.75);
+}
+
+/* Section label (small uppercase above inputs) */
+.field-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: rgba(240, 237, 232, 0.4);
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  display: block;
+}
+
+/* Text/number/tel input */
+.field-input {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+  padding: 12px 14px;
+  color: #f0ede8;
+  font-size: 14px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Syne', sans-serif;
+  transition: border-color 0.2s;
+}
+
+.field-input:focus {
+  border-color: rgba(0, 230, 118, 0.35);
+}
+
+.field-input--mono {
+  font-family: 'DM Mono', monospace;
+}
+
+.field-input--mb-large {
+  margin-bottom: 24px;
+}
+
+/* Select dropdown */
+.field-select {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+  padding: 12px 14px;
+  color: #f0ede8;
+  font-size: 14px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Syne', sans-serif;
+  cursor: pointer;
+  appearance: none;
+  transition: border-color 0.2s;
+}
+
+.field-select:focus {
+  border-color: rgba(0, 230, 118, 0.35);
+}
+
+/* Primary CTA button — green/blue gradient */
+.primary-btn {
+  width: 100%;
+  padding: 14px 0;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  background: linear-gradient(135deg, #00e676, #00b0ff);
+  color: #000;
+  border: none;
+  font-family: 'Syne', sans-serif;
+  transition: opacity 0.2s;
+  margin-top: 8px;
+}
+
+.primary-btn:hover {
+  opacity: 0.88;
+}
+
+.primary-btn:disabled,
+.primary-btn--disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* Orange/pink gradient — used by VTU */
+.primary-btn--orange {
+  background: linear-gradient(135deg, #ff6b35, #ff1a8c);
+  color: #fff;
+}

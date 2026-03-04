@@ -1,0 +1,212 @@
+/* ===== VTUTopup.css ===== */
+
+.vtu {
+  width: 100%;
+  padding: clamp(30px, 5vh, 60px) clamp(16px, 5vw, 40px);
+}
+
+.vtu__inner {
+  max-width: 580px;
+  margin: 0 auto;
+}
+
+.vtu__title {
+  font-size: clamp(22px, 4vw, 30px);
+  font-weight: 800;
+  margin-bottom: 8px;
+  letter-spacing: -1px;
+}
+
+.vtu__subtitle {
+  color: rgba(240, 237, 232, 0.5);
+  font-size: 14px;
+  margin-bottom: 32px;
+}
+
+/* Card */
+.vtu__card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: clamp(20px, 4vw, 32px);
+}
+
+/* Type toggle */
+.vtu__toggle {
+  display: flex;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 10px;
+  padding: 4px;
+  margin-bottom: 28px;
+}
+
+.vtu__toggle-btn {
+  flex: 1;
+  padding: 10px 0;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s;
+  font-family: 'Syne', sans-serif;
+  background: transparent;
+  color: rgba(240, 237, 232, 0.4);
+}
+
+.vtu__toggle-btn--active {
+  background: #fff;
+  color: #000;
+}
+
+/* Network grid */
+.vtu__network-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.vtu__network-btn {
+  padding: 12px 4px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 13px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  background: transparent;
+  color: rgba(240, 237, 232, 0.5);
+  transition: all 0.15s;
+  font-family: 'Syne', sans-serif;
+}
+
+/* Amount grid */
+.vtu__amount-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.vtu__amount-btn {
+  padding: 12px 0;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  background: transparent;
+  color: rgba(240, 237, 232, 0.6);
+  transition: all 0.15s;
+  font-family: 'DM Mono', monospace;
+}
+
+.vtu__amount-btn--active {
+  border-color: #ff6b35;
+  background: rgba(255, 107, 53, 0.08);
+  color: #ff6b35;
+}
+
+/* Data plan list */
+.vtu__plans {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.vtu__plan-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  background: transparent;
+  transition: all 0.15s;
+}
+
+.vtu__plan-item--active {
+  border-color: #00b0ff;
+  background: rgba(0, 176, 255, 0.07);
+}
+
+.vtu__plan-item--disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.vtu__plan-label {
+  font-weight: 700;
+  font-size: 15px;
+  color: #f0ede8;
+}
+
+.vtu__plan-label--active {
+  color: #00b0ff;
+}
+
+.vtu__plan-duration {
+  font-size: 12px;
+  color: rgba(240, 237, 232, 0.4);
+  margin-top: 2px;
+}
+
+.vtu__plan-price {
+  font-weight: 700;
+  color: rgba(240, 237, 232, 0.6);
+  font-family: 'DM Mono', monospace;
+}
+
+.vtu__plan-price--active {
+  color: #00b0ff;
+}
+
+/* Success */
+.vtu__success {
+  width: 100%;
+  padding: clamp(60px, 12vh, 120px) clamp(16px, 5vw, 40px);
+  text-align: center;
+}
+
+.vtu__success-inner {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.vtu__success-emoji {
+  font-size: 56px;
+  margin-bottom: 20px;
+}
+
+.vtu__success-title {
+  font-weight: 800;
+  font-size: clamp(22px, 4vw, 28px);
+  margin-bottom: 10px;
+}
+
+.vtu__success-value {
+  color: #00e676;
+  font-weight: 700;
+}
+
+.vtu__success-network {
+  font-size: 13px;
+  color: rgba(240, 237, 232, 0.35);
+  margin-bottom: 36px;
+}
+
+@media (max-width: 480px) {
+  .vtu__network-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Per-network active colours */
+.vtu__network-btn--mtn.vtu__network-btn--active     { border-color: #ffcc00; background: rgba(255,204,0,0.08);  color: #ffcc00; }
+.vtu__network-btn--airtel.vtu__network-btn--active  { border-color: #ff4444; background: rgba(255,68,68,0.08);  color: #ff4444; }
+.vtu__network-btn--glo.vtu__network-btn--active     { border-color: #4caf50; background: rgba(76,175,80,0.08);  color: #4caf50; }
+.vtu__network-btn--9mobile.vtu__network-btn--active { border-color: #00c853; background: rgba(0,200,83,0.08);   color: #00c853; }

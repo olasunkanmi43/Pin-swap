@@ -1,0 +1,142 @@
+/* ===== AirtimeToCash.css ===== */
+
+.atc {
+  width: 100%;
+  padding: clamp(30px, 5vh, 60px) clamp(16px, 5vw, 40px);
+}
+
+.atc__inner {
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.atc__title {
+  font-size: clamp(22px, 4vw, 30px);
+  font-weight: 800;
+  margin-bottom: 8px;
+  letter-spacing: -1px;
+}
+
+.atc__subtitle {
+  color: rgba(240, 237, 232, 0.5);
+  font-size: 14px;
+  margin-bottom: 32px;
+}
+
+/* Card */
+.atc__card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: clamp(20px, 4vw, 32px);
+}
+
+/* Rate badges */
+.atc__rates {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+}
+
+.atc__rate-badge {
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.05);
+  color: rgba(240, 237, 232, 0.5);
+  font-family: 'DM Mono', monospace;
+}
+
+/* Network grid */
+.atc__network-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.atc__network-btn {
+  padding: 12px 4px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 13px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  background: transparent;
+  color: rgba(240, 237, 232, 0.5);
+  transition: all 0.15s;
+  font-family: 'Syne', sans-serif;
+}
+
+.atc__network-btn--active {
+  border-color: #00b0ff;
+  background: rgba(0, 176, 255, 0.08);
+  color: #00b0ff;
+}
+
+/* Cash preview */
+.atc__preview {
+  background: rgba(0, 230, 118, 0.07);
+  border: 1px solid rgba(0, 230, 118, 0.2);
+  border-radius: 10px;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.atc__preview-label {
+  font-size: 13px;
+  color: rgba(240, 237, 232, 0.5);
+}
+
+.atc__preview-amount {
+  font-weight: 800;
+  font-size: clamp(18px, 3vw, 22px);
+  color: #00e676;
+  font-family: 'DM Mono', monospace;
+}
+
+/* Success screen */
+.atc__success {
+  width: 100%;
+  padding: clamp(60px, 12vh, 120px) clamp(16px, 5vw, 40px);
+  text-align: center;
+}
+
+.atc__success-inner {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.atc__success-emoji {
+  font-size: 56px;
+  margin-bottom: 20px;
+}
+
+.atc__success-title {
+  font-weight: 800;
+  font-size: clamp(22px, 4vw, 28px);
+  margin-bottom: 10px;
+}
+
+.atc__success-amount {
+  color: #00e676;
+  font-weight: 700;
+}
+
+.atc__success-detail {
+  font-size: 13px;
+  color: rgba(240, 237, 232, 0.35);
+  margin-bottom: 36px;
+}
+
+@media (max-width: 480px) {
+  .atc__network-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
